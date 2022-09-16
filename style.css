@@ -1,0 +1,15 @@
+#header{
+    width: 1000px;
+    height: 100px;
+    background-color: rgb(132, 219, 143);
+}
+.img{
+    width: 100px;
+}
+
+#conteudo-esquerdo{
+    width: 150px;
+    height: 150px;
+    float: right;
+    background-color: aqua;
+}
