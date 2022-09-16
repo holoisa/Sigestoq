@@ -1,15 +1,42 @@
-#header{
-    width: 1000px;
-    height: 100px;
-    background-color: rgb(132, 219, 143);
+body{
+    background-color: #ddc7a6;
 }
+
 .img{
     width: 100px;
+
 }
 
 #conteudo-esquerdo{
-    width: 150px;
-    height: 150px;
+    width: 45%;
+    height: 400px;
+    float: left;
+    background-color: #e0e1e1;
+    border: 2px solid #e0e1e1;
+    border-radius: 6%;
+}
+#dividir{
+    width: 20px;
+    height: 10px;
+    background-color:#ddc7a6;
+}
+
+#conteudo-direito{
+    width: 45%;
+    height: 400px;
+    float:right;
+    background-color: #e0e1e1;
+    border: 2px solid #e0e1e1;
+    border-radius: 6%;
+}
+
+.barreira1{
+    height: 20px;
+    width: 2%;;
+    float: left;
+}
+.barreira2{
+    height: 20px;
+    width: 2%;
     float: right;
-    background-color: aqua;
 }
