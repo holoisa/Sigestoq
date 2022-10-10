@@ -1,9 +1,10 @@
 body{
     background-color: #ddc7a6;
+    font-family: Georgia, 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;  //mudar
 }
 
 .img{
-    height: 200px;
+    height: 220px;
 
 }
 
@@ -34,3 +35,17 @@ body{
     width: 2%;
     float: right;
 }
+#titulo{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+#label{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 10%;
+}
+#selecao{
+    background-color: #f56d15;
+    border-radius: 8%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+    
