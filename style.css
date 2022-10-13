@@ -1,10 +1,10 @@
 body{
     background-color: #ddc7a6;
-    font-family: Georgia, 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;  //mudar
+    font-family: Georgia, 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;  
 }
 
 .img{
-    height: 220px;
+    height: 270px;
 
 }
 
@@ -36,16 +36,31 @@ body{
     float: right;
 }
 #titulo{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    padding-bottom: 20px;
 }
 
 #label{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-left: 10%;
+    font-size: larger;
+    padding-bottom: 50px;
 }
 #selecao{
     background-color: #f56d15;
-    border-radius: 8%;
+    border-radius: 20%;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+    font-size: larger;
     
+}
+
+#senha{
+    padding-left: 128px;
+    background-color: #f56d15;;
+
+}
+
+#texto{
+    background-color: #f56d15;
+}
