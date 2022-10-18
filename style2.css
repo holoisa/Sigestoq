@@ -1,0 +1,79 @@
+body{
+    background-color: #ddc7a6;
+    font-family: Georgia, 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;  
+    
+}
+
+#fundo{
+    border-top-color: #f56d15;
+    width: 1220px;
+    height: 640px;
+    background-color: #e0e1e1;
+    border-radius: 3%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#espaco{
+    color: #ddc7a6;
+}
+
+#barra{
+ background-color: #f56d15;
+ width: 1220px;
+ height: 64px;
+ border-top-left-radius: 20px;
+ border-top-right-radius: 20px;
+}
+
+
+#cardapio{
+    padding-left: 200px;
+    padding-bottom: 120px;
+    background-color: #f89351;
+    border-style: none;
+    border-radius: 20px;
+    
+    
+    
+}
+#transporte{
+    padding-left: 200px;
+    padding-bottom: 120px;
+    background-color: #f89351;
+    border-style: none;
+    border-radius: 20px;
+}
+
+#dispensa{
+    width: 200px;
+    padding-bottom: 120px;
+    background-color: #f89351;
+    border-style: none;
+    border-radius: 20px;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#comentario{
+    padding-left: 200px;
+    padding-bottom: 120px;
+    background-color: #f89351;
+    border-style: none;
+    border-radius: 20px;
+}
+
+.linha{
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 60px;
+    margin-top: 90px;
+    }
+
+.botao {
+    width: 270px;
+}
