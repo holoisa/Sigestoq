@@ -13,55 +13,73 @@
 <body>
   
   
-        <img src="img/2.png" class="img"> 
+       <img src="img/2.png" class="img"> 
 
     <div id="dividir"></div>
-
-    <div class="barreira1"></div>
-
+    
     <div id="conteudo-esquerdo">
         <center>
-        <h4 id="titulo"> Cadastre sua escola</h4>
+        <h4 id="titulo"> Cadastre sua Instituição</h4>
         </center>
-        <p>
+        <div id="dentroL1">
+          <br>
             <label id="label" for="estado">Estado</label>
+          </br>
+          <br>
+            <label id="label" for="instituicao">Instituição</label>
+          </br>
+          <br>
+            <label id="label" for="iddiretor">NºDiretor</label>
+          </br>
+          <br>
+          <label id="label"for="nomeinstutuicao">Nome instituição</label>
+        </div>
+        <div id="dentroL2">
+          <p>
             <select name="sestado" id="selecao" name="listaestado" form="estadoform">
               <option value="">Indique seu Estado</option>
               <option value="RN">Rio Grande do Norte</option>
               <option value="PA">Paraíba</option>
               <option value="SE">Sergipe</option>
             </select>
+          </p>
+          <p>
+            <select id="selecao" name="listainstituicao" form="instituicaoform">
+              <option value="">Indique sua Instituição</option>
+              <option  value="1">Transportadora</option>
+              <option value="2">Escola</option>
+            </select>
+          </p>
+          <p>
+            <input id="selecao" type="text">
+          </p>
+        </div>  
 
-        </p>
-        <p>
-            <label id="label" for="escola">Escola</label>
-            <select id="selecao" name="listaescola" form="escolaform">
-              <option value="">Indique sua Escola</option>
-              <option name="oi" value="1">Ceep</option>
-              <option value="2">Paraíba</option>
-              <option value="3">Sergipe</option>
-            </select></p>
-
-            <form action="2pag.html">
-              <center>
-              <input type="submit" value="Continuar"/>
-            </center>
-          </form>
+           
     </div>
 
-    <div class="barreira2"></div>
-
     <div id="conteudo-direito">
-        <center>
+      <center>
         <h4 id="titulo"> Acesse o estoque</h4>
       </center>
+      <center>
+      <div id="dentroR1">
       <p>
       <label id="label">Código de funcionário</label>
-
+      </p>
+      <p>
+      <label id="label">Senha</label>
+      </p>
+      </div>
+      <div id="dentroR2">
+        <p>
       <input id="texto" type="text"> 
-    </p>
-    <label id="label">Senha</label>
+      </p>
+      <p>
     <input id="senha" type="password">
+    </p>
+    </div>
+  </center>
   </div>
         
 
