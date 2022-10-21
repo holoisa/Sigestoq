@@ -28,44 +28,9 @@ body{
  height: 64px;
  border-top-left-radius: 20px;
  border-top-right-radius: 20px;
+
 }
 
-
-#cardapio{
-    padding-left: 200px;
-    padding-bottom: 120px;
-    background-color: #f89351;
-    border-style: none;
-    border-radius: 20px;
-    
-    
-    
-}
-#transporte{
-    padding-left: 200px;
-    padding-bottom: 120px;
-    background-color: #f89351;
-    border-style: none;
-    border-radius: 20px;
-}
-
-#dispensa{
-    width: 200px;
-    padding-bottom: 120px;
-    background-color: #f89351;
-    border-style: none;
-    border-radius: 20px;
-    font-size: large;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-#comentario{
-    padding-left: 200px;
-    padding-bottom: 120px;
-    background-color: #f89351;
-    border-style: none;
-    border-radius: 20px;
-}
 
 .linha{
     display: flex;
@@ -75,5 +40,53 @@ body{
     }
 
 .botao {
-    width: 270px;
+    margin-left: 60px;
+    width: 200px;
+    height: 40px;
+    padding-bottom: 120px;
+    background-color: #f89351;
+    border-style: none;
+    border-radius: 20px;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+input{
+    background-color: #e0e1e1;
+    border-style: none;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border-radius: 20px;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.cardapio{
+    width: 80px;
+    height: 80px;
+}
+
+h1{
+    padding-left: 10px;
+    color: #e0e1e1;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.reta{
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+
+h3{
+    padding-top: 15px;
+    padding-left: 8px;
+    font-size: medium;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.img{
+    width: px;
+    height: 90px;
 }
