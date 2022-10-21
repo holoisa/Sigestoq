@@ -14,7 +14,7 @@ body{
     float: left;
     background-color: #e0e1e1;
     border: 2px solid #e0e1e1;
-    border-radius: 6%;
+    border-radius: 20px;
 }
 #conteudo-direito{
     width: 45%;
@@ -22,7 +22,7 @@ body{
     float:right;
     background-color: #e0e1e1;
     border: 2px solid #e0e1e1;
-    border-radius: 6%;
+    border-radius: 20px;
 }
 
 .barreira1{
@@ -41,7 +41,7 @@ body{
     padding-bottom: 20px;
 }
 
-#label{
+label{
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     padding-left: 10%;
     font-size: larger;
@@ -49,18 +49,34 @@ body{
 }
 #selecao{
     background-color: #f56d15;
-    border-radius: 20%;
+    border-radius: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: larger;
+    width: 220px;
     
 }
 
-#senha{
-    padding-left: 128px;
-    background-color: #f56d15;;
-
-}
 
 #texto{
     background-color: #f56d15;
+    border-radius: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    width: 220px;
+}
+
+.linha{
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 60px;
+   
+
+}
+
+.dentroL{
+    width: 50%;
+}
+
+.dentroR{
+    width: 50%;
 }
