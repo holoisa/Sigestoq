@@ -1,0 +1,106 @@
+body{
+    background: #ddc7a6 url("img/fundo.png") no-repeat right top fixed;
+    font-family: Georgia, 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;  
+}
+
+.img{
+    height: 200px;
+    margin-left: 80px;
+    margin-top: 30px;
+
+}
+
+#conteudo-esquerdo{
+    width: 40%;
+    height: 400px;
+    float: left;
+    background-color: #e0e1e1;
+    border: 2px solid #e0e1e1;
+    border-radius: 35px;
+    margin-left: 80px;
+    margin-top: 30px;
+}
+#conteudo-direito{
+    width: 40%;
+    height: 400px;
+    float:right;
+    background-color: #e0e1e1;
+    border: 2px solid #e0e1e1;
+    border-radius: 35px;
+    margin-right: 80px;
+    margin-top: 30px;
+}
+
+#titulo{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: x-large;
+    padding-bottom: 20px;
+}
+
+label{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 10%;
+    font-size: larger;
+    padding-bottom: 50px;
+}
+#selecao{
+    background-color: #f56d15;
+    border-radius: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    width: 220px;
+    border-style: none;
+    
+}
+
+
+#texto{
+    background-color: #f56d15;
+    border-radius: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    width: 220px;
+}
+
+.linha{
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 60px;
+   
+
+}
+.linha2{
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: 60px;
+}
+.dentroL{
+    width: 45%;
+}
+
+.dentroR{
+    width: 45%;
+    
+}
+
+#butao{
+    background-color: #f56d15;
+    border-radius: 20px;
+    border-style: none;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    float: right;
+    height: 30px;
+    width: 79px;
+    margin-top: 60px;
+    margin-right: 80px;
+}
+
+h6{
+    float: right;
+    margin-right: 90px;
+    font-family: Arial, sans-serif;
+    font-style: italic;
+    font-size: 50%;
+    
+}
