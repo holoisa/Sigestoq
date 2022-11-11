@@ -47,6 +47,17 @@ body{
     border-style: solid;
     border-color: black;
     height: 100px;
+   
+    
+
+}
+#baba{
+    border-top: solid black;
+    border-top-width: 2px;
+}
+td{
+    border-bottom: solid black;
+    border-bottom-width: 2px;
 
 }
 
@@ -69,7 +80,7 @@ h2{
 }
 
 #estoque{
-    margin-left: 145px;
+    margin-left: 155px;
     font-family:monospace;
     font-size: 300%;
     margin-bottom: 20px;
@@ -86,9 +97,22 @@ h2{
     border-radius: 20px;
     border-style: none;
     margin-top: 60px;
-    margin-left: 51.6vh;
+    margin-left: 40vh;
     font-size: large;
     height: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#calculo{
+    background-color: white;
+    border-radius: 20px;
+    border-style: none;
+    margin-top: 60px;
+    margin-left: 9vh;
+    font-size: large;
+    height: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
