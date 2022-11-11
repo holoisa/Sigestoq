@@ -60,7 +60,6 @@ $resuldado_consulta = mysqli_query($conn, $consulta);
             <td id="baba">Nome</td>
             <td id="baba">Quantidade</td>
             <td id="baba">Validade</td>
-            <td id="baba">Peso</td>
         </tr>
     <?php while($row_armazon = mysqli_fetch_assoc($resuldado_consulta)){?>
         <tr>
@@ -68,8 +67,6 @@ $resuldado_consulta = mysqli_query($conn, $consulta);
             <td><?php echo $row_armazon['produto_nome']; ?></td>
             <td><?php echo $row_armazon['produto_quantidade']; ?></td>
             <td><?php echo date("d/m/y", strtotime($row_armazon['produto_validade'])); ?></td>
-            <td><?php echo $row_armazon['produto_peso']; ?></td>
-        </tr>
     <?php }?>
             </table>
             </div>
