@@ -54,6 +54,7 @@ body{
 #baba{
     border-top: solid black;
     border-top-width: 2px;
+    background-color: antiquewhite;
 }
 td{
     border-bottom: solid black;
@@ -97,7 +98,7 @@ h2{
     border-radius: 20px;
     border-style: none;
     margin-top: 60px;
-    margin-left: 40vh;
+    margin-left: 50vh;
     font-size: large;
     height: 40px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -108,13 +109,12 @@ h2{
     border-radius: 20px;
     border-style: none;
     margin-top: 60px;
-    margin-left: 9vh;
+    margin-left: 10vh;
     font-size: large;
     height: 40px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
+
 
 #calculo{
     background-color: white;
