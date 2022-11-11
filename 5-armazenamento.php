@@ -56,11 +56,11 @@ $resuldado_consulta = mysqli_query($conn, $consulta);
             <div>
             <table id="tab">
         <tr>
-            <td>#</td>
-            <td>Nome</td>
-            <td>Quantidade</td>
-            <td>Validade</td>
-            <td>Peso</td>
+            <td id="baba">#</td>
+            <td id="baba">Nome</td>
+            <td id="baba">Quantidade</td>
+            <td id="baba">Validade</td>
+            <td id="baba">Peso</td>
         </tr>
     <?php while($row_armazon = mysqli_fetch_assoc($resuldado_consulta)){?>
         <tr>
