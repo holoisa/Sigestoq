@@ -1,0 +1,113 @@
+body{
+    background: #ddc7a6 url("img/fundo.png") no-repeat right top fixed;
+    font-family: Georgia, 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;  
+}
+#fundo{
+    border-top-color: #f56d15;
+    width: 1220px;
+    height: 640px;
+    background-color: #e0e1e1;
+    border-radius: 3%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-top: 16px;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#barra{
+    background-color: #f56d15;
+    width: 1220px;
+    height: 64px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+   
+   }
+
+   .reta{
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+
+.nome{
+    padding-left: 20px;
+    color: #e0e1e1;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h3{
+    padding-top: 15px;
+    padding-left: 8px;
+    font-size: medium;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#out{
+    margin-left: 690px;
+    margin-top: 18px;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #e0e1e1;
+    border-style: none;
+    border-radius: 20px;
+    
+}
+
+#back{
+    margin-left: 1120px;
+    margin-top: 240px;
+    font-size: larger;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f56d15;
+    border-style: none;
+    border-radius: 20px;
+    
+}
+
+.titulo{
+    margin-left: 100px;
+    margin-top: 80px;
+    font-family:monospace;
+    font-size: 300%;
+}
+
+#nome{
+    background-color: #f8f8f8;
+    border-style: none;
+    border-radius: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    width: 200px;
+    height: 30px;
+    margin-top: 10px;
+    
+}
+#nome2{
+    background-color: #f8f8f8;
+    border-style: none;
+    border-radius: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: larger;
+    width: 200px;
+    height: 30px;
+    margin-left: 70px;
+    margin-top: 10px;
+}
+
+.msg{
+    margin-left: 100px;
+}
+
+#cadastrar{
+    width: 140px;
+    height: 30px;
+    margin-top: 24px;
+    font-size:x-large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f56d15;
+    border-style: none;
+    border-radius: 20px;
+    
+}

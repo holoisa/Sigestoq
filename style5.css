@@ -1,0 +1,131 @@
+body{
+    background: #ddc7a6 url("img/fundo.png") no-repeat right top fixed;
+    font-family: Georgia, 'Times New Roman', Times, serif, Arial, Helvetica, sans-serif;  
+}
+#fundo{
+    border-top-color: #f56d15;
+    width: 1220px;
+    height: 700px;
+    background-color: #e0e1e1;
+    border-radius: 3%;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: auto;
+}
+#barra{
+    background-color: #f56d15;
+    width: 1220px;
+    height: 64px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+   
+   }
+
+.titulo{
+    padding-left: 20px;
+    color: #e0e1e1;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+ h3{
+    padding-top: 15px;
+    padding-left: 8px;
+    font-size: medium;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+ }
+
+ .reta{
+    display: flex;
+    flex-flow: row wrap;
+    
+}
+#tab{
+    width: 910px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: black;
+    height: 80px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+    
+
+}
+#baba{
+    border-top: solid black;
+    border-top-width: 2px;
+    background-color: antiquewhite;
+    font-size: medium;
+}
+td{
+    border-bottom: solid black;
+    border-bottom-width: 2px;
+    height: 40px;
+
+}
+
+h2{
+
+    margin-left: 150px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#out{
+    margin-left: 690px;
+    margin-top: 18px;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #e0e1e1;
+    border-style: none;
+    border-radius: 20px;
+    
+
+}
+
+#estoque{
+    margin-left: 155px;
+    font-family:monospace;
+    font-size: 300%;
+    margin-bottom: 20px;
+}
+
+.roll{
+    height: 75vh;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+#edicao{
+    background-color: white;
+    border-radius: 20px;
+    border-style: none;
+    margin-top: 60px;
+    margin-left: 50vh;
+    font-size: large;
+    height: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#calculo{
+    background-color: white;
+    border-radius: 20px;
+    border-style: none;
+    margin-top: 60px;
+    margin-left: 10vh;
+    font-size: large;
+    height: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+#calculo{
+    background-color: white;
+    border-radius: 20px;
+    border-style: none;
+    margin-top: 60px;
+    margin-left: 10vh;
+    font-size: large;
+    height: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
