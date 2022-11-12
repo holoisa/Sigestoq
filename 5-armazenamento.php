@@ -47,6 +47,60 @@ $resuldado_consulta = mysqli_query($conn, $consulta);
                 <div class="superior">
                     <form action="">
                         <input id="calculo" type="submit" value="Calculo da Merenda">
+                    </form><?php
+include_once("conexao.php");
+
+$consulta = "SELECT * FROM produto";
+$resuldado_consulta = mysqli_query($conn, $consulta);
+
+?>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style5.css">
+    <link rel="shortcut icon" href="img/2-Icon.png"> 
+
+    <title>SigEstoq-Armazen</title>
+</head>
+<body>
+    <div id="fundo">
+        <div id="barra">
+            <div class="reta">
+                <div class="superior">
+                    <h1 class="titulo">SIGESTOQ</h1>
+                </div>
+                <div class="superior">
+                    <h3>- Sistema de Gerenciamento de Estoque</h3>
+                </div>
+                <div class="superior">
+                    <form action="1-login.html">
+                        <input type="submit" value="SAIR" id="out"/>
+                    </form>
+                </div>
+            </div>  
+        </div>
+        <div>
+            <div class="reta">
+                <div class="superior">
+                    <h4 id="estoque">Estoque</h4>
+                </div>
+                <div class="superior">
+                    <form action="6-edicao.php">
+                        <input id="edit" type="submit" value="Edição de Produtos">
+                    </form>
+                </div>
+                <div class="superior">
+                    <form action="4-cadastrop.php">
+                        <input id="cadastro" type="submit" value="Cadastro de Produtos">
+                    </form>
+                </div>
+                <div class="superior">
+                    <form action="">
+                        <input id="calculo" type="submit" value="Calculo da Merenda">
                     </form>
                 </div>
             </div>
