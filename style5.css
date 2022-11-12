@@ -96,35 +96,34 @@ h2{
     overflow-y: scroll;
 }
 
-#edicao{
+#cadastro{
     background-color: white;
     border-radius: 20px;
     border-style: none;
     margin-top: 60px;
-    margin-left: 50vh;
+    margin-left: 9vh;
     font-size: large;
     height: 40px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+#edit{
+    background-color: white;
+    border-radius: 20px;
+    border-style: none;
+    margin-top: 60px;
+    margin-left: 9vh;
+    font-size: large;
+    height: 40px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 
 #calculo{
     background-color: white;
     border-radius: 20px;
     border-style: none;
     margin-top: 60px;
-    margin-left: 10vh;
-    font-size: large;
-    height: 40px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-}
-
-
-#calculo{
-    background-color: white;
-    border-radius: 20px;
-    border-style: none;
-    margin-top: 60px;
-    margin-left: 10vh;
+    margin-left:9vh;
     font-size: large;
     height: 40px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
