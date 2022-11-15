@@ -1,9 +1,10 @@
 <?php
+session_start();
 include_once("conexao.php");
-
-$consulta = "SELECT * FROM produto";
-$resuldado_consulta = mysqli_query($conn, $consulta);
-
+$id=filter_input(INPUT_GET,'id', FILTER_SANITIZE_NUMBER_INT);
+$result_produto = "SELECT * FROM produto where IDproduto = '$id'";
+$resultado_produto = mysqli_query($conn, $result_produto);
+$row_produto = mysqli_fetch_assoc($resultado_produto);
 ?>
 
 <!DOCTYPE html>
@@ -12,73 +13,69 @@ $resuldado_consulta = mysqli_query($conn, $consulta);
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style6.css">
+    <link rel="stylesheet" href="style4.css">
     <link rel="shortcut icon" href="img/2-Icon.png"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>SigEstoq-Edição</title>
 </head>
+
 <body>
     <div id="fundo">
         <div id="barra">
             <div class="reta">
                 <div class="superior">
-                    <h1 class="titulo">SIGESTOQ</h1>
+                    <h1 class="nome">SIGESTOQ</h1>
                 </div>
                 <div class="superior">
                     <h3>- Sistema de Gerenciamento de Estoque</h3>
                 </div>
-                <div class="superior">
-                    <form action="1-login.html">
-                        <input type="submit" value="SAIR" id="out"/>
-                    </form>
-                </div>
-            </div>  
+            <div class="superior">
+                <form action="1-login.html">
+                    <input type="submit" value="SAIR" id="out"/>
+                </form>
+            </div>
+            </div>
         </div>
-        <div>
-            <div class="reta">
-                <div class="superior">
-                    <h4 id="estoque">Estoque</h4>
-                </div>
-                <div class="superior">
-                    <form action="">
-                        <input id="edit" type="submit" value="Edição de Produtos">
-                </div>
-                <div class="superior">
-                    <form action="4-cadastrop.php">
-                        <input id="cadastro"type="submit" value="Cadastro de Produtos">
-                    </form>
-                </div>
+        <div class="msg">
+        <?php 
+        if(isset($_SESSION['msg'])){
+            echo $_SESSION['msg'];
+            unset($_SESSION['msg']);
+        }
+        ?>
+        </div>
+        <p>
+        <h1 class="titulo"> Edição de Produtos</h1>
+       
+        </p>
+        <center>
+            <p>
+                <form method="POST" action='edit.php'>
+                <input type="hidden" name="IDproduto" value="<?php echo $row_produto['IDproduto']; ?>">
 
-                <div class="superior">
-                    <form action="">
-                        <input id="calculo" type="submit" value="Calculo da Merenda">
-                    </form>
-                </div>
-            </div>
-        </div>
-            <center>
-                
-            <div>
-            <table id="tab">
-        <tr>
-            <td id="baba">#</td>
-            <td id="baba">Nome</td>
-            <td id="baba">Quantidade</td>
-            <td id="baba">Validade</td>
-            <td id="baba">Ação</td>
-        </tr>
-    <?php while($row_armazon = mysqli_fetch_assoc($resuldado_consulta)){?>
-        <tr>
-            <td><?php echo $row_armazon['IDproduto']; ?></td>
-            <td><?php echo $row_armazon['produto_nome']; ?></td>
-            <td><?php echo $row_armazon['produto_quantidade']; ?></td>
-            <td><?php echo date("d/m/y", strtotime($row_armazon['produto_validade'])); ?></td>
-            <td> 
-                <a href="6-1-editar.php?codigo=<?php echo $row_armazon['IDproduto']; ?>" style="color: #008000">EDITAR</a> |
-                <a href="6-2-excluir.php?codigo=<?php echo $row_armazon['IDproduto']; ?>"style="color: #FF0000">EXCLUIR</a>
-            </td>
-    <?php }?>
-            </table>
-            </div>
-            </center>
+                <input type="text" placeholder="Nome do Produto" value="<?php echo $row_produto['produto_nome']; ?>" id="nome" name="produto_nome" required>
+
+                <select id="nome2" name="IDcategoria">
+                <?php 
+            $result_categoria = "SELECT * FROM categoria";
+            $resultado_categoria = mysqli_query($conn, $result_categoria);
+            while($row_categoria = mysqli_fetch_assoc($resultado_categoria)){ ?>
+            <option value="<?php echo $row_categoria['IDcategoria']; ?>"> <?php echo $row_categoria['categoria_nome']; ?>
+
+            <?php } ?>
+        
+                </select>
+
+                <input type="text" name="produto_quantidade" placeholder="quantidade" id="nome2" value="<?php echo $row_produto['produto_quantidade']?>" required>
+
+                <input type="date" placeholder="Validade"  id="nome2" name="produto_validade"  value="<?php echo $row_produto['produto_validade']?>"><br><br>
+
+                <button name="inserir" id="cadastrar">EDITAR</button>
+            </form>
+            <form action="5-armazenamento.php">
+                    <input type="submit" value="↩" id="back"/>
+                </form>
+            </p>
+        </center>
     </div>
