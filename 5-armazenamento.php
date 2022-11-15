@@ -1,4 +1,5 @@
 <?php
+session_start();
 include_once("conexao.php");
 
 $consulta = "SELECT * FROM produto";
@@ -40,11 +41,6 @@ $resuldado_consulta = mysqli_query($conn, $consulta);
                     <h4 id="estoque">Estoque</h4>
                 </div>
                 <div class="superior">
-                    <form action="6-edicao.php">
-                        <input id="edit" type="submit" value="Edição de Produtos">
-                    </form>
-                </div>
-                <div class="superior">
                     <form action="4-cadastrop.php">
                         <input id="cadastro" type="submit" value="Cadastro de Produtos">
                     </form>
@@ -65,6 +61,7 @@ $resuldado_consulta = mysqli_query($conn, $consulta);
             <td id="baba">Nome</td>
             <td id="baba">Quantidade</td>
             <td id="baba">Validade</td>
+            <td id="baba">Edição</td>
         </tr>
     <?php while($row_armazon = mysqli_fetch_assoc($resuldado_consulta)){?>
         <tr>
@@ -72,8 +69,29 @@ $resuldado_consulta = mysqli_query($conn, $consulta);
             <td><?php echo $row_armazon['produto_nome']; ?></td>
             <td><?php echo $row_armazon['produto_quantidade']; ?></td>
             <td><?php echo date("d/m/y", strtotime($row_armazon['produto_validade'])); ?></td>
+            <td> 
+                <a href="6-edicao.php?id=<?php echo $row_armazon['IDproduto']; ?>"> <img src="img/6-editar.png" width="32" height="32" /></a>
+                <a href="6-2-excluir.php?id=<?php echo $row_armazon['IDproduto']; ?>"> <img src="img/5-excluir.png" width="32" height="32" /></a>
+            </td>
     <?php }?>
             </table>
+            <div class="reta">
+                <div class="superior">
+                    <div id="mensage"> 
+                <?php 
+             if(isset($_SESSION['msg'])){
+                echo $_SESSION['msg'];
+                unset($_SESSION['msg']);
+            }
+            ?> 
+                    </div>      
+                </div>
+                <div class="superior"> 
+                <form action="2-menu.html">
+                    <input type="submit" value="↩" id="back"/>
+                </form>
+                </div>
+            </div>
             </div>
             </center>
     </div>
