@@ -37,14 +37,7 @@ $row_produto = mysqli_fetch_assoc($resultado_produto);
             </div>
             </div>
         </div>
-        <div class="msg">
-        <?php 
-        if(isset($_SESSION['msg'])){
-            echo $_SESSION['msg'];
-            unset($_SESSION['msg']);
-        }
-        ?>
-        </div>
+        
         <p>
         <h1 class="titulo"> Edição de Produtos</h1>
        
@@ -77,5 +70,13 @@ $row_produto = mysqli_fetch_assoc($resultado_produto);
                     <input type="submit" value="↩" id="back"/>
                 </form>
             </p>
+            <div class="msg">
+        <?php 
+        if(isset($_SESSION['msg'])){
+            echo $_SESSION['msg'];
+            unset($_SESSION['msg']);
+        }
+        ?>
+        </div>
         </center>
     </div>
