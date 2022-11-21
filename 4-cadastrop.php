@@ -32,14 +32,7 @@ session_start();
             </div>
             </div>
         </div>
-        <div class="msg">
-        <?php 
-        if(isset($_SESSION['msg'])){
-            echo $_SESSION['msg'];
-            unset($_SESSION['msg']);
-        }
-        ?>
-        </div>
+        
         <p>
         <h1 class="titulo"> Cadastro de Produtos</h1>
        
@@ -66,9 +59,17 @@ session_start();
 
                 <button name="inserir" id="cadastrar">Cadastrar</button>
             </form>
+
+        <?php 
+        if(isset($_SESSION['msg'])){
+            echo $_SESSION['msg'];
+            unset($_SESSION['msg']);
+        }
+        ?>
             <form action="5-armazenamento.php">
                     <input type="submit" value="↩" id="back"/>
                 </form>
             </p>
+           
         </center>
     </div>
